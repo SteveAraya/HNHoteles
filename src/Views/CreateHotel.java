@@ -2,6 +2,7 @@
 package Views;
 
 import com.sun.glass.events.KeyEvent;
+import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
@@ -16,6 +17,7 @@ public class CreateHotel extends javax.swing.JFrame {
      */
     public CreateHotel() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     //this method cleans the textFields of the view.
@@ -106,45 +108,7 @@ public class CreateHotel extends javax.swing.JFrame {
         String email = txt_LodgingType.getText();
         
         String pass = "";
-        
-       
-       
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
 
-//Este if verifica el email, si el email esta ya registrado en la base de datos, entonces se prodece a informar al 
-//usuario que ese email ya esta en uso.
-//        if(){
-//            
-//            JOptionPane.showMessageDialog(this, "The Email " + emailTextField.getText() + 
-//                        " is already used in another account",
-//                        "Error", JOptionPane.ERROR_MESSAGE);
-//            
-//            emailTextField.setText("");
-//            this.emailTextField.requestFocus();
-//            
-//                return;
-// 
-//        }
-        
-
-//Este else es para cuando no existe el email, entonces se procede a crear la nueva cuenta de usuario
-//        else{
-//   
-//
-//  
-//        }
-        
-//        this.dispose();
-   
     }
     
     
@@ -204,7 +168,7 @@ public class CreateHotel extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         btn_selectimage = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        txt_image = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -572,7 +536,7 @@ public class CreateHotel extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField1)
+                .addComponent(txt_image)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btn_selectimage)
                 .addContainerGap())
@@ -585,7 +549,7 @@ public class CreateHotel extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_selectimage)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_image, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30))
         );
 
@@ -700,14 +664,7 @@ public class CreateHotel extends javax.swing.JFrame {
     }//GEN-LAST:event_txt_LodgingTypeKeyPressed
 
     private void btn_createAccountKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btn_createAccountKeyPressed
-        
-        
-        
-        
-        
-        
-        
-        
+
         
     }//GEN-LAST:event_btn_createAccountKeyPressed
 
@@ -758,6 +715,10 @@ public class CreateHotel extends javax.swing.JFrame {
     private void btn_selectimageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_selectimageActionPerformed
         JFileChooser imagefile = new JFileChooser();
         int imagewindow= imagefile.showOpenDialog(null);
+        if(imagewindow==JFileChooser.APPROVE_OPTION){
+        File file= imagefile.getSelectedFile();
+        txt_image.setText(String.valueOf(file));
+        }
         
     }//GEN-LAST:event_btn_selectimageActionPerformed
 
@@ -889,7 +850,6 @@ public class CreateHotel extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JSpinner sp_ConstrucctionYear;
     private javax.swing.JTextField txt_HotelSize;
     private javax.swing.JTextField txt_LodgingType;
@@ -899,6 +859,7 @@ public class CreateHotel extends javax.swing.JFrame {
     private javax.swing.JTextField txt_checkout;
     private javax.swing.JTextField txt_country;
     private javax.swing.JTextField txt_hotelName;
+    private javax.swing.JTextField txt_image;
     private javax.swing.JTextField txt_serviceName;
     private javax.swing.JTextField txt_servicecode;
     private javax.swing.JTextField txt_telephone;

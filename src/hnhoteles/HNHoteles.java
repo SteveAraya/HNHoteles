@@ -1,6 +1,7 @@
 
 package hnhoteles;
 
+import Views.CreateHotel;
 import Views.MainView;
 
 /**
@@ -15,25 +16,9 @@ public class HNHoteles {
     public static void main(String[] args) {
         
         MainView mainView = new MainView();
-        mainView.setLocationRelativeTo(mainView);
         mainView.setVisible(true);
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        mainView.setLocationRelativeTo(null);
+
     }
     
 }
