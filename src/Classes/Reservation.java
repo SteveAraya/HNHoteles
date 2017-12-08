@@ -1,4 +1,3 @@
-
 package Classes;
 
 import java.text.SimpleDateFormat;
@@ -10,108 +9,108 @@ import java.util.Date;
  */
 public class Reservation {
 
-    private int Roomnumber;
-    private String EntryDate;
-    private String ExitDate;
-    private int NighstNumber;
-    private String RoomType;
-    private String RoomAmount;
-    private int roomprice;
-    private String UserName;
-    private String ChildrenAmount;
-    private String AdultAmount;
+    private int reservation_num;
+    private String reservationhour;
+    private String entrydate;
+    private String exitdate;
+    private int nightsnumbers;
+    private int childrenamount;
+    private String adulstamount;
+    private int num_room;
+    private int id_user;
+    private int cardnumber;
 
-    public Reservation(int Roomnumber, String EntryDate, String ExitDate, int NighstNumber, String RoomType, String RoomAmount, int roomprice, String UserName, String ChildrenAmount, String AdultAmount) {
-        this.Roomnumber = Roomnumber;
-        this.EntryDate = EntryDate;
-        this.ExitDate = ExitDate;
-        this.NighstNumber = NighstNumber;
-        this.RoomType = RoomType;
-        this.RoomAmount = RoomAmount;
-        this.roomprice = roomprice;
-        this.UserName = UserName;
-        this.ChildrenAmount = ChildrenAmount;
-        this.AdultAmount = AdultAmount;
+    public Reservation(int reservation_num, String reservationhour, String entrydate, String exitdate, int nightsnumbers, int childrenamount, String adulstamount, int num_room, int id_user, int cardnumber) {
+        this.reservation_num = reservation_num;
+        this.reservationhour = reservationhour;
+        this.entrydate = entrydate;
+        this.exitdate = exitdate;
+        this.nightsnumbers = nightsnumbers;
+        this.childrenamount = childrenamount;
+        this.adulstamount = adulstamount;
+        this.num_room = num_room;
+        this.id_user = id_user;
+        this.cardnumber = cardnumber;
     }
 
-    public int getRoomnumber() {
-        return Roomnumber;
+    public int getReservation_num() {
+        return reservation_num;
     }
 
-    public void setRoomnumber(int Roomnumber) {
-        this.Roomnumber = Roomnumber;
+    public void setReservation_num(int reservation_num) {
+        this.reservation_num = reservation_num;
     }
 
-    public String getEntryDate() {
-        return EntryDate;
+    public String getReservationhour() {
+        return reservationhour;
     }
 
-    public void setEntryDate(String EntryDate) {
-        this.EntryDate = EntryDate;
+    public void setReservationhour(String reservationhour) {
+        this.reservationhour = reservationhour;
     }
 
-    public String getExitDate() {
-        return ExitDate;
+    public String getEntrydate() {
+        return entrydate;
     }
 
-    public void setExitDate(String ExitDate) {
-        this.ExitDate = ExitDate;
+    public void setEntrydate(String entrydate) {
+        this.entrydate = entrydate;
     }
 
-    public int getNighstNumber() {
-        return NighstNumber;
+    public String getExitdate() {
+        return exitdate;
     }
 
-    public void setNighstNumber(int NighstNumber) {
-        this.NighstNumber = NighstNumber;
+    public void setExitdate(String exitdate) {
+        this.exitdate = exitdate;
     }
 
-    public String getRoomType() {
-        return RoomType;
+    public int getNightsnumbers() {
+        return nightsnumbers;
     }
 
-    public void setRoomType(String RoomType) {
-        this.RoomType = RoomType;
+    public void setNightsnumbers(int nightsnumbers) {
+        this.nightsnumbers = nightsnumbers;
     }
 
-    public String getRoomAmount() {
-        return RoomAmount;
+    public int getChildrenamount() {
+        return childrenamount;
     }
 
-    public void setRoomAmount(String RoomAmount) {
-        this.RoomAmount = RoomAmount;
+    public void setChildrenamount(int childrenamount) {
+        this.childrenamount = childrenamount;
     }
 
-    public int getRoomprice() {
-        return roomprice;
+    public String getAdulstamount() {
+        return adulstamount;
     }
 
-    public void setRoomprice(int roomprice) {
-        this.roomprice = roomprice;
+    public void setAdulstamount(String adulstamount) {
+        this.adulstamount = adulstamount;
     }
 
-    public String getUserName() {
-        return UserName;
+    public int getNum_room() {
+        return num_room;
     }
 
-    public void setUserName(String UserName) {
-        this.UserName = UserName;
+    public void setNum_room(int num_room) {
+        this.num_room = num_room;
     }
 
-    public String getChildrenAmount() {
-        return ChildrenAmount;
+    public int getId_user() {
+        return id_user;
     }
 
-    public void setChildrenAmount(String ChildrenAmount) {
-        this.ChildrenAmount = ChildrenAmount;
+    public void setId_user(int id_user) {
+        this.id_user = id_user;
     }
 
-    public String getAdultAmount() {
-        return AdultAmount;
+    public int getCardnumber() {
+        return cardnumber;
     }
 
-    public void setAdultAmount(String AdultAmount) {
-        this.AdultAmount = AdultAmount;
+    public void setCardnumber(int cardnumber) {
+        this.cardnumber = cardnumber;
     }
 
     public static String actualdate() {// static methow for get actully date for reservation day

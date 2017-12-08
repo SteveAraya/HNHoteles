@@ -7,24 +7,24 @@ package Classes;
  */
 public class Season {
     
-    private String code;
+    private String season_code;
     private String EntryDate;
     private String ExitDate;
     private String Name;
 
-    public Season(String code, String EntryDate, String ExitDate, String Name) {
-        this.code = code;
+    public Season(String season_code, String EntryDate, String ExitDate, String Name) {
+        this.season_code = season_code;
         this.EntryDate = EntryDate;
         this.ExitDate = ExitDate;
         this.Name = Name;
     }
 
-    public String getCode() {
-        return code;
+    public String getSeason_code() {
+        return season_code;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setSeason_code(String season_code) {
+        this.season_code = season_code;
     }
 
     public String getEntryDate() {
@@ -50,13 +50,7 @@ public class Season {
     public void setName(String Name) {
         this.Name = Name;
     }
-    
-    
-    
-    
-    
-    
-    
-    
+
+   
     
 }

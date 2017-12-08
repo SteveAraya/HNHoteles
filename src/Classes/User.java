@@ -14,14 +14,17 @@ public class User {
     private String UserPassword ;
     private String UserNumber;
     private String Usertype;
+    private String cointype;
 
-    public User(String userName, String UserLastName, String UserGender, String UserEmail, String UserPassword, String UserNumber) {
+    public User(String userName, String UserLastName, String UserGender, String UserEmail, String UserPassword, String UserNumber, String Usertype, String cointype) {
         this.userName = userName;
         this.UserLastName = UserLastName;
         this.UserGender = UserGender;
         this.UserEmail = UserEmail;
         this.UserPassword = UserPassword;
         this.UserNumber = UserNumber;
+        this.Usertype = Usertype;
+        this.cointype = cointype;
     }
 
     public String getUserName() {
@@ -71,12 +74,22 @@ public class User {
     public void setUserNumber(String UserNumber) {
         this.UserNumber = UserNumber;
     }
-    
-    
-    
-    
-    
-    
+
+    public String getUsertype() {
+        return Usertype;
+    }
+
+    public void setUsertype(String Usertype) {
+        this.Usertype = Usertype;
+    }
+
+    public String getCointype() {
+        return cointype;
+    }
+
+    public void setCointype(String cointype) {
+        this.cointype = cointype;
+    }
     
     
 }
